@@ -96,7 +96,7 @@ const Hero = () => {
             className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-10"
           >
             <button onClick={scrollToProjects} className="btn-futuristic">
-              View Case Studies
+              View  Projects
             </button>
 
             <a
