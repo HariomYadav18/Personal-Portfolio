@@ -15,7 +15,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background relative overflow-hidden">
       <GeometricBackground />
-      <Scene3D />
+      {/* <Scene3D /> */}
       <Navigation />
       <main className="relative z-10">
         <Hero />
