@@ -45,7 +45,7 @@ const About = () => {
             <br />
             <br />
             I am currently pursuing a B.Tech in Computer Science at
-            <span className="text-primary"> Vellore Institute of Technology</span> (CGPA: 8.68),
+            <span className="text-primary"> Vellore Institute of Technology</span> (CGPA: 8.71),
             graduating in July 2026, while actively building and shipping real-world products.
           </p>
         </motion.div>
