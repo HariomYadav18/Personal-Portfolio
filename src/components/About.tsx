@@ -8,7 +8,7 @@ const About = () => {
 
   const stats = [
     { value: 3, label: 'Production Apps', suffix: '' },
-    { value: 8.68, label: 'CGPA', suffix: '', decimals: 2 },
+    { value: 8.71, label: 'CGPA', suffix: '', decimals: 2 },
     { value: 260, label: 'DSA Problems', suffix: '+' },
   ];
 
