@@ -60,7 +60,7 @@ const Education = () => {
                 <div className="flex items-center gap-2 text-muted-foreground px-3 py-1 border border-border/50 rounded">
                   <Award size={16} className="text-accent" />
                   <span className="text-sm font-semibold font-display tracking-wide">
-                    CGPA: 8.68 / 10
+                    CGPA: 8.71 / 10
                   </span>
                 </div>
               </div>
