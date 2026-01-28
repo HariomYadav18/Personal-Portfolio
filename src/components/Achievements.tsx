@@ -28,7 +28,7 @@ const achievements = [
   },
   {
     icon: GraduationCap,
-    number: 8.68,
+    number: 8.71,
     suffix: '',
     label: 'CGPA',
     subtitle: 'Vellore Institute of Technology',
@@ -48,7 +48,7 @@ const highlights = [
   'Solved 260+ DSA problems across arrays, linked lists, hashing, sorting, and trees',
   'Ranked in the top 13.3% of 14,000+ teams in Amazon HackOn (52,000+ participants)',
   'Oracle Cloud Infrastructure Foundations certified with a score of 95/100',
-  'Maintained a CGPA of 8.68 while building and deploying production-grade applications',
+  'Maintained a CGPA of 8.71 while building and deploying production-grade applications',
   'Delivered 3+ live full-stack projects with real users and end-to-end ownership',
   'Represented Karnataka at U-14 zonal-level cricket tournaments, demonstrating teamwork, discipline, and competitive mindset',
 ];
