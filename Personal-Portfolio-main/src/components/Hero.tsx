@@ -1,141 +1,74 @@
 import { motion } from "framer-motion";
-import { ArrowDownRight, Sparkles, Github, Terminal, Cpu } from "lucide-react";
+import { ArrowDownRight, Github } from "lucide-react";
 import headshot from "@/assets/headshot.jpeg";
-import { NeuralOrb } from "./NeuralOrb";
 
 export const Hero = () => {
-  const maskVariant = {
-    hidden: { y: "115%", opacity: 0 },
-    visible: (i: number) => ({
-      y: "0%",
-      opacity: 1,
-      transition: {
-        duration: 0.9,
-        ease: [0.16, 1, 0.3, 1],
-        delay: i * 0.12,
-      },
-    }),
-  };
-
   return (
-    <section className="relative min-h-[92vh] flex flex-col justify-center px-6 max-w-7xl mx-auto pt-24 pb-12 overflow-hidden">
-      {/* Dynamic Radial Mesh Background */}
-      <div className="pointer-events-none absolute top-1/4 left-1/3 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-tr from-violet-600/15 via-cyan-500/10 to-transparent blur-[140px] rounded-full animate-pulse-glow" />
+    <section className="relative min-h-[95vh] flex flex-col justify-center px-6 max-w-6xl mx-auto pt-24 pb-16 overflow-hidden">
+      {/* Volumetric AI Glow */}
+      <div className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-gradient-to-tr from-violet-600/20 via-cyan-500/10 to-transparent blur-[120px] rounded-full animate-ambient-pulse" />
 
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-        {/* Left Side: Editorial Kinetic Typography */}
-        <div className="lg:col-span-7 z-10">
-          {/* Top Status Capsule */}
-          <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-neutral-800 bg-neutral-900/70 backdrop-blur-md mb-8 shadow-sm"
-          >
-            <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-violet-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-violet-500"></span>
-            </span>
-            <span className="text-xs font-mono text-neutral-300 tracking-wide uppercase">
-              AI Fullstack Engineer @ TCS • GenAI & Agentics
-            </span>
-          </motion.div>
-
-          {/* Kinetic Headline Mask */}
-          <div className="space-y-1">
-            <div className="overflow-hidden">
-              <motion.h1
-                custom={1}
-                variants={maskVariant}
-                initial="hidden"
-                animate="visible"
-                className="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight text-neutral-100"
-              >
-                Architecting
-              </motion.h1>
-            </div>
-
-            <div className="overflow-hidden">
-              <motion.h1
-                custom={2}
-                variants={maskVariant}
-                initial="hidden"
-                animate="visible"
-                className="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight bg-gradient-to-r from-violet-400 via-fuchsia-300 to-cyan-400 bg-clip-text text-transparent"
-              >
-                Intelligent Models
-              </motion.h1>
-            </div>
-
-            <div className="overflow-hidden">
-              <motion.h1
-                custom={3}
-                variants={maskVariant}
-                initial="hidden"
-                animate="visible"
-                className="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight text-neutral-500"
-              >
-                into resilient software.
-              </motion.h1>
-            </div>
-          </div>
-
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.45, duration: 0.8 }}
-            className="mt-6 text-sm md:text-base text-neutral-400 max-w-xl leading-relaxed"
-          >
-            Transitioning full-stack systems into autonomous GenAI architectures. Specializing in streaming interfaces, RAG orchestrations, and interactive motion that feels alive.
-          </motion.p>
-
-          {/* Identity Teaser & Quick Action */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.55, duration: 0.8 }}
-            className="mt-8 flex flex-wrap items-center gap-4 pt-6 border-t border-neutral-900"
-          >
-            <div className="flex items-center gap-3">
-              <img
-                src={headshot}
-                alt="Hariom Yadav"
-                className="w-12 h-12 rounded-full object-cover ring-2 ring-violet-500/40"
-              />
-              <div>
-                <h4 className="text-sm font-semibold text-white">Hariom Yadav</h4>
-                <p className="text-xs text-neutral-500 font-mono">TCS Software Engineer</p>
-              </div>
-            </div>
-
-            <div className="flex items-center gap-3 ml-auto">
-              <a
-                href="https://github.com/HariomYadav18"
-                target="_blank"
-                rel="noreferrer"
-                className="p-2.5 rounded-xl border border-neutral-800 bg-neutral-900/60 text-neutral-400 hover:text-white hover:border-neutral-700 transition-all"
-              >
-                <Github size={18} />
-              </a>
-              <a
-                href="#projects"
-                className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white text-black font-semibold text-xs tracking-tight hover:bg-neutral-200 transition-all shadow-lg"
-              >
-                Explore Agentic Works <ArrowDownRight size={16} />
-              </a>
-            </div>
-          </motion.div>
+      {/* Top Status Capsule */}
+      <motion.div
+        initial={{ opacity: 0, y: -10 }}
+        animate={{ opacity: 1, y: 0 }}
+        className="mx-auto flex flex-col items-center z-10 mb-12"
+      >
+        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-xl shadow-2xl">
+          <span className="relative flex h-2 w-2">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-2 w-2 bg-cyan-500"></span>
+          </span>
+          <span className="text-[10px] font-mono text-neutral-300 tracking-widest uppercase">
+            System Online • AI Agent Architecture
+          </span>
         </div>
+      </motion.div>
 
-        {/* Right Side: Diego Vz-Style 3D Quantum Orb Canvas */}
-        <div className="lg:col-span-5 relative flex items-center justify-center">
-          <div className="absolute inset-0 bg-violet-600/10 blur-[90px] rounded-full pointer-events-none" />
-          <NeuralOrb />
-          <div className="absolute bottom-4 right-4 pointer-events-none px-3 py-1 rounded-md bg-neutral-900/80 border border-neutral-800/80 backdrop-blur-md text-[11px] font-mono text-neutral-500">
-            INTERACTIVE_WEBGL_CORE
-          </div>
-        </div>
+      {/* Main Typography */}
+      <div className="text-center z-10 max-w-4xl mx-auto space-y-4">
+        <motion.h1
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.1 }}
+          className="text-5xl sm:text-7xl md:text-8xl font-bold tracking-tighter text-white leading-[1.05]"
+        >
+          Building <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-cyan-400">autonomous</span> <br className="hidden md:block" />
+          intelligence.
+        </motion.h1>
+
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2 }}
+          className="text-base md:text-lg text-neutral-400 font-light tracking-wide max-w-2xl mx-auto leading-relaxed mt-6"
+        >
+          Hariom Yadav. Full-stack AI Engineer based in India, currently deploying resilient agentic systems and scalable enterprise microservices at TCS.
+        </motion.p>
       </div>
+
+      {/* Actions */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.3 }}
+        className="flex items-center justify-center gap-4 mt-12 z-10"
+      >
+        <a
+          href="#projects"
+          className="px-6 py-3 rounded-full bg-white text-neutral-950 font-medium text-sm hover:scale-105 transition-transform flex items-center gap-2 shadow-[0_0_30px_rgba(255,255,255,0.2)]"
+        >
+          Explore the systems <ArrowDownRight size={16} />
+        </a>
+        <a
+          href="https://github.com/HariomYadav18"
+          target="_blank"
+          rel="noreferrer"
+          className="p-3 rounded-full border border-white/10 bg-white/5 text-neutral-300 hover:text-white hover:bg-white/10 backdrop-blur-md transition-all"
+        >
+          <Github size={18} />
+        </a>
+      </motion.div>
     </section>
   );
 };
