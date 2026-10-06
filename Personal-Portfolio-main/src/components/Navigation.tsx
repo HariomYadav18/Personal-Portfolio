@@ -30,13 +30,11 @@ export default function Navigation() {
           </span>
         </a>
 
-      
-        <div className="hidden md:flex items-center gap-6 text-xs font-mono text-neutral-400">
+      <div className="hidden md:flex items-center gap-6 text-xs font-mono text-neutral-400">
   <a href="#experience" className="hover:text-white transition-colors">/experience</a>
   <a href="#projects" className="hover:text-white transition-colors">/projects</a>
   <a href="#skills" className="hover:text-white transition-colors">/stack</a>
-  <a href="#about" className="hover:text-white transition-colors">/about</a>
-  <a href="#contact" className="hover:text-white transition-colors">/contact</a>
+  <a href="#education" className="hover:text-white transition-colors">/edu</a>
 </div>
 
         <div className="flex items-center gap-2.5">
