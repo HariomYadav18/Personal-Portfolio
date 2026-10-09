@@ -1,7 +1,6 @@
 import type { Config } from "tailwindcss";
 
 export default {
-  darkMode: ["class"],
   content: [
     "./index.html",
     "./src/**/*.{ts,tsx}",
@@ -10,24 +9,19 @@ export default {
     extend: {
       colors: {
         neutral: {
-          850: "#1f1f22",
+          850: "#e5e5e7",
           900: "#18181b",
-          950: "#09090b", // Deep zinc
+          950: "#fafafc",
         },
       },
       keyframes: {
-        audioWave: {
-          "0%, 100%": { height: "0.5rem" },
-          "50%": { height: "2rem" },
-        },
         ambientPulse: {
-          "0%, 100%": { opacity: "0.15", transform: "scale(1)" },
-          "50%": { opacity: "0.25", transform: "scale(1.05)" },
+          "0%, 100%": { opacity: "0.5", transform: "scale(1) translate(0px, 0px)" },
+          "50%": { opacity: "0.7", transform: "scale(1.08) translate(10px, -20px)" },
         }
       },
       animation: {
-        "audio-wave": "audioWave 1.2s ease-in-out infinite",
-        "ambient-pulse": "ambientPulse 8s ease-in-out infinite",
+        "ambient-pulse": "ambientPulse 12s ease-in-out infinite",
       },
     },
   },

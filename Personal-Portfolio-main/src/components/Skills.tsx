@@ -39,17 +39,17 @@ export default function Skills() {
   const [activeIdx, setActiveIdx] = useState(0);
 
   return (
-    <section id="skills" className="max-w-6xl mx-auto px-6 py-24 border-t border-neutral-900">
+    <section id="skills" className="max-w-6xl mx-auto px-6 py-24 border-t border-neutral-100">
       <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
         <div>
-          <span className="text-xs font-mono uppercase tracking-widest text-neutral-500">
+          <span className="text-[10px] font-mono uppercase tracking-widest text-neutral-400">
             Specialized Tech Matrix
           </span>
-          <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight text-white mt-1">
+          <h2 className="text-3xl md:text-5xl font-semibold tracking-tight text-[#111111] mt-1">
             AI & Engineering Stack
           </h2>
         </div>
-        <p className="text-sm font-mono text-neutral-400 max-w-sm">
+        <p className="text-sm text-neutral-500 max-w-sm font-light">
           Full-stack proficiency coupled with modern model orchestration, retrieval pipelines, and vector databases.
         </p>
       </div>
@@ -61,24 +61,24 @@ export default function Skills() {
             <div
               key={cat.title}
               onMouseEnter={() => setActiveIdx(idx)}
-              className={`p-6 rounded-2xl border transition-all duration-300 flex flex-col justify-between cursor-pointer ${
+              className={`p-6 rounded-3xl border transition-all duration-500 flex flex-col justify-between cursor-pointer ${
                 activeIdx === idx
-                  ? "border-neutral-600 bg-neutral-900/80 shadow-xl shadow-black/60"
-                  : "border-neutral-850 bg-neutral-950/60 hover:border-neutral-700"
+                  ? "border-white bg-white/70 shadow-lg"
+                  : "border-white/40 bg-white/30 backdrop-blur-md shadow-sm hover:border-white hover:bg-white/50"
               }`}
             >
               <div>
-                <div className="w-10 h-10 rounded-xl bg-neutral-900 border border-neutral-800 flex items-center justify-center text-violet-400 mb-4">
-                  <Icon size={18} />
+                <div className="w-10 h-10 rounded-full bg-[#111111]/5 flex items-center justify-center text-neutral-600 mb-4">
+                  <Icon size={16} />
                 </div>
-                <h3 className="text-base font-bold text-white tracking-tight">{cat.title}</h3>
-                <p className="text-xs font-mono text-neutral-500 mt-1">{cat.metrics}</p>
+                <h3 className="text-base font-bold text-[#111111] tracking-tight">{cat.title}</h3>
+                <p className="text-[11px] font-mono text-neutral-500 mt-1">{cat.metrics}</p>
 
                 <div className="flex flex-wrap gap-1.5 mt-5">
                   {cat.items.map((skill) => (
                     <span
                       key={skill}
-                      className="text-xs font-mono px-2 py-1 rounded-md bg-neutral-900 border border-neutral-800 text-neutral-300"
+                      className="text-[10px] font-mono px-2 py-1 rounded-full bg-neutral-100/40 border border-white/60 text-neutral-600"
                     >
                       {skill}
                     </span>
@@ -86,9 +86,9 @@ export default function Skills() {
                 </div>
               </div>
 
-              <div className="mt-6 pt-4 border-t border-neutral-900 flex items-center justify-between text-[11px] font-mono text-neutral-500">
+              <div className="mt-6 pt-4 border-t border-neutral-100 flex items-center justify-between text-[10px] font-mono text-neutral-400">
                 <span>INDEX_0{idx + 1}</span>
-                <span className="text-neutral-400">STATUS: PROD_READY</span>
+                <span>STATUS: ACTIVE</span>
               </div>
             </div>
           );
